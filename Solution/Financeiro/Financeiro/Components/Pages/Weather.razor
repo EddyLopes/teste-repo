@@ -45,7 +45,7 @@ else
         await Task.Delay(500);
 
         var startDate = DateOnly.FromDateTime(DateTime.Now);
-        var summaries = new[] { "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Teste", "teste 2" };
+        var summaries = new[] { "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Teste", "teste 2", "teste 3" };
         forecasts = Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = startDate.AddDays(index),
@@ -54,6 +54,7 @@ else
         }).ToArray();
     }
 
+    //apenas um teste
     private class WeatherForecast
     {
         public DateOnly Date { get; set; }
